@@ -10,7 +10,7 @@ export const connectDB = async (): Promise<void> => {
     const connection = await mongoose.connect(DB);
     addAdminUser();
     console.log(
-      `The server is connected to the ${connection.connection.host} dataabse`
+      `The server is connected to the ${connection.connection.host} database.`
     );
   } catch (err: any) {
     console.log(`Error while connecting to the database : ${err}`);

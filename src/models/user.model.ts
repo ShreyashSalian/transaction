@@ -12,6 +12,7 @@ interface UserDocument extends Document {
   password: string;
   contactNumber: string;
   role: string;
+  balance: number;
   // failedLoginAttempts: number;
   // lockUntil?: Date | null;
   isDeleted: boolean;
@@ -57,6 +58,10 @@ const userSchema = new Schema<UserDocument>(
     isDeleted: {
       type: Boolean,
       default: false,
+    },
+    balance: {
+      type: Number,
+      default: 0,
     },
     // failedLoginAttempts: {
     //   type: Number,

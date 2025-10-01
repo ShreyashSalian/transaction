@@ -1,6 +1,6 @@
-# Login System
+# Transaction System
 
-- A Node.js + TypeScript authentication system using MongoDB and Redis. Supports secure login/signup with JWT, bcrypt password hashing, account lockout with exponential backoff, and IP/username-based rate limiting to safely handle ~1000 requests per minute.
+- A simple Node.js project demonstrating how to perform atomic transactions using MongoDB and Mongoose. It includes User and Order models, API endpoints with Express, and transaction handling with commit/rollback to ensure data consistency (all-or-nothing).
 
 ---
 
@@ -9,7 +9,7 @@
 - To clone this project
 
 ```bash
-  git clone https://github.com/ShreyashSalian/login-system.git
+  git clone https://github.com/ShreyashSalian/transaction.git
 ```
 
 - Go to the folder user-authenication
